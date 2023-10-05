@@ -3,7 +3,7 @@
 ## Aviso Legal
 **Este projeto foi feito principalmente para diversão cerca de um ano atrás. Algumas bibliotecas foram atualizadas, então basicamente não funciona mais. Nem todos os recursos planejados foram lançados. Nenhuma PCB foi criada e isso causa muitos problemas para a maioria de vocês. Sinto muito dizer, mas não vou mais fornecer suporte para isso. É exaustivo e às vezes apenas destrói qualquer intenção de continuar. Este não é um projeto comercial e não pretendo fazer algo como doação. Talvez esteja decepcionando alguém. Desculpe. Projeto encerrado.** 
 
-![Pequeno robô cão](https://github.com/SovGVD/esp32-robot-dog-code/blob/master/assets/img/small.png?raw=true)
+![Pequeno robô cão](https://github.com/SovGVD/assets/img/small.jpg?raw=true)
 
 ## Hardware
 - ESP32
