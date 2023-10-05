@@ -1,41 +1,41 @@
-# Small Robot dog (quadruped)
+# Robot Dog
 
-## Disclaimer
-**This project has been done mostly for fun about a year ago. Some libraries have been updated, so it basically does not work any more. Not every planned feature was released. No PCB is made and it creates a lot of trouble for most of you. I'm sorry to say, but I'm not going to provide any support for it any more. It's exhausting and sometimes just destroys any intentions to continue. This is not comercial project and I'm not going to do something like Donation. Maybe I'm disappointing someone. Sorry. Project closed.** 
+## Aviso Legal
+**Este projeto foi feito principalmente para diversão cerca de um ano atrás. Algumas bibliotecas foram atualizadas, então basicamente não funciona mais. Nem todos os recursos planejados foram lançados. Nenhuma PCB foi criada e isso causa muitos problemas para a maioria de vocês. Sinto muito dizer, mas não vou mais fornecer suporte para isso. É exaustivo e às vezes apenas destrói qualquer intenção de continuar. Este não é um projeto comercial e não pretendo fazer algo como doação. Talvez esteja decepcionando alguém. Desculpe. Projeto encerrado.** 
 
-![Small robot dog](https://github.com/SovGVD/esp32-robot-dog-code/blob/master/assets/img/small.jpg?raw=true)
+![Pequeno robô cão](https://github.com/SovGVD/esp32-robot-dog-code/blob/master/assets/img/small.jpg?raw=true)
 
 ## Hardware
 - ESP32
-- IMU (not implemented)
+- IMU (não implementado)
 - 12 servos TowerPro mg90d
-- Two 18650
+- Dois 18650
 
 ## Software
-- Arduino IDE compatible
+- Compatível com Arduino IDE
 
-## TODO
-- [ ] use power sensor and IMU
+## A Fazer
+- [ ] Usar sensor de energia e IMU
 
-## How to
-### Calibrate servos (create `servoMainProfile`)
-- Print servo_calib tool and install servo into it: circle plate with dots, 10deg each from 0 to 180.
-- use tools/servoCalib.ino and connect servo to 14 pin
-- open Arduino IDE terminal and input `1500` (and press Enter) - this should be servo middle and it should point to the middle dot of printed tool
-- decrease value to find `minAngle` and `degMin` values for it (start with `800` and decrease it until servo stop move, than return back one step, e.g. set 790 - servo moved, 780 - servo moved, 760 - servo don't move, use 780)
-- do the same to find `maxAngle` and `degMax` but make value and start from 2100 and increase values
-- great, now we know our servo limits (or at least what are the limits for lib+servo), time to find more accurate servo positions
-- input values until you will not find proper positions for deg30, deg50...deg130, deg150
+## Como Fazer
+### Calibrar os servos (criar `servoMainProfile`)
+- Imprima a ferramenta servo_calib e instale o servo nela: um prato circular com pontos, 10 graus cada um de 0 a 180.
+- Use a ferramenta tools/servoCalib.ino e conecte o servo ao pino 14.
+- Abra o terminal do Arduino IDE e digite `1500` (e pressione Enter) - isso deve ser o meio do servo e ele deve apontar para o ponto médio da ferramenta impressa.
+- Diminua o valor para encontrar os valores `minAngle` e `degMin` (comece com `800` e diminua até o servo parar de se mover, depois volte um passo, por exemplo, defina 790 - servo moveu, 780 - servo moveu, 760 - servo não se move, use 780).
+- Faça o mesmo para encontrar `maxAngle` e `degMax`, mas comece com 2100 e aumente os valores.
+- Ótimo, agora sabemos os limites do nosso servo (ou pelo menos quais são os limites para a lib+servo), hora de encontrar posições mais precisas do servo.
+- Insira valores até encontrar as posições adequadas para deg30, deg50...deg130, deg150.
 
-### Legs
-#### Assembling
-- to assembly legs correctly print leg_calib tool/template one as it is and one mirrored for the other side of robot for Beta and Gamma angles, as also Alpha angle tool
-- power up servo and connect ESP32 to you computer, open Arduino IDE terminal
-- input `set servo_to_calib` to set all servo to position expected for printer tool
-- assemble legs as closer as possible to expected leg parts positions according to the tool (90deg, 45deg, 90deg)
+### Pernas
+#### Montagem
+- Para montar as pernas corretamente, imprima a ferramenta/template de calibração de perna exatamente como ela é e outra espelhada para o outro lado do robô para os ângulos Beta e Gamma, assim como a ferramenta de ângulo Alpha.
+- Ligue o servo e conecte o ESP32 ao seu computador, abra o terminal do Arduino IDE.
+- Digite `set servo_to_calib` para definir todos os servos na posição esperada para a ferramenta de impressão.
+- Monte as pernas o mais próximo possível das posições esperadas das partes da perna de acordo com a ferramenta (90 graus, 45 graus, 90 graus).
 
-#### Calibration
-- repeat steps 2,3 of Legs->Assembling instruction
-- input `set help` to see the list of available commands, we are interested in `XX_HAL_trim_xxxx`, e.g. `LF_HAL_trim_alpha`, where `LF` - left front leg, and `alpha` is the angle name
-- put Alpha leg tool on top of the robot legs servo, surface of tool should be (near)perfectly align with servos body, if not, use `XX_HAL_trim_alpha value_in_deg` command to set servo trim value, e.g. `set LF_HAL_trim_alpha -3`, it should not be too big, in other cases you need to repeat `Assemble` step
-- using tool for Beta and Gamma angles, calibrate/trim other servos
+#### Calibração
+- Repita os passos 2 e 3 da instrução Pernas->Montagem.
+- Digite `set help` para ver a lista de comandos disponíveis, estamos interessados em `XX_HAL_trim_xxxx`, por exemplo, `LF_HAL_trim_alpha`, onde `LF` - perna frontal esquerda, e `alpha` é o nome do ângulo.
+- Coloque a ferramenta de ângulo Alpha em cima dos servos das pernas do robô, a superfície da ferramenta deve estar (quase) perfeitamente alinhada com o corpo dos servos, se não estiver, use o comando `XX_HAL_trim_alpha valor_em_graus` para definir o valor de ajuste do servo, por exemplo, `set LF_HAL_trim_alpha -3`, não deve ser muito grande, em outros casos você precisa repetir o passo de Montagem.
+- Usando a ferramenta para os ângulos Beta e Gamma, calibre/ajuste os outros servos.
