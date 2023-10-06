@@ -1,21 +1,32 @@
 # Robot Dog
 
-## Aviso Legal
-**Este projeto foi feito principalmente para diversão cerca de um ano atrás. Algumas bibliotecas foram atualizadas, então basicamente não funciona mais. Nem todos os recursos planejados foram lançados. Nenhuma PCB foi criada e isso causa muitos problemas para a maioria de vocês. Sinto muito dizer, mas não vou mais fornecer suporte para isso. É exaustivo e às vezes apenas destrói qualquer intenção de continuar. Este não é um projeto comercial e não pretendo fazer algo como doação. Talvez esteja decepcionando alguém. Desculpe. Projeto encerrado.** 
+## Nota
+**Este projeto foi concebido com o propósito de aprendizado e diversão, tendo como inspiração um projeto já existente (https://www.instructables.com/ESP32-Small-Robot-Dog/). O criador do projeto original mencionou ter descontinuado o desenvolvimento devido à obsolescência das bibliotecas utilizadas. Com a intenção de revitalizar e aprimorar o projeto, minha meta é realizar melhorias significativas, atualizar as bibliotecas e elevar ao máximo o seu potencial.** 
 
-![Pequeno robô cão](https://github.com/lucasbustamante/ROBOT_DOG/blob/main/assets/img/small.jpg?raw=true)
+![ROBOT_DOG](https://github.com/lucasbustamante/ROBOT_DOG/blob/main/assets/img/small.jpg?raw=true)
 
 ## Hardware
 - ESP32
-- IMU (não implementado)
+- IMU
 - 12 servos TowerPro mg90d
-- Dois 18650
+- Baterias 18650
+- Mini360
+- INA219
 
 ## Software
 - Compatível com Arduino IDE
 
 ## A Fazer
-- [ ] Usar sensor de energia e IMU
+
+- [ ] Criação da PCB
+- [ ] Alteração do Layout dos Controles
+- [ ] Melhorias na modelagem 3D
+- [ ] Impressão 3D
+- [ ] Montagem da Estrutura
+- [ ] Implementar sensor de energia INA219
+- [ ] Implementar sensor de giroscópio MPU9250
+- [ ] Atualizaçao das bibliotecas
+      
 
 ## Como Fazer
 ### Calibrar os servos (criar `servoMainProfile`)
