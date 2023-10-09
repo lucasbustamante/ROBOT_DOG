@@ -1,7 +1,7 @@
 # Robot Dog
 
 ## Nota
-**Este projeto foi concebido com o propósito de aprendizado e diversão, tendo como inspiração um projeto já existente (https://www.instructables.com/ESP32-Small-Robot-Dog/). O criador do projeto original mencionou ter descontinuado o desenvolvimento devido à obsolescência das bibliotecas utilizadas. Com a intenção de revitalizar e aprimorar o projeto, minha meta é realizar melhorias significativas, atualizar as bibliotecas e elevar ao máximo o seu potencial.** 
+**Este projeto foi concebido com o propósito de aprendizado e diversão, tendo como inspiração um projeto já existente [aqui](https://www.instructables.com/ESP32-Small-Robot-Dog/). O criador do projeto original mencionou ter descontinuado o desenvolvimento devido à obsolescência das bibliotecas utilizadas. Com a intenção de revitalizar e aprimorar o projeto, minha meta é realizar melhorias significativas, atualizar as bibliotecas e elevar ao máximo o seu potencial.** 
 
 ![ROBOT_DOG](https://github.com/lucasbustamante/ROBOT_DOG/blob/main/assets/img/small.jpg?raw=true)
 
