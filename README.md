@@ -30,7 +30,7 @@
 
 ## Como Fazer
 ### Calibrar os servos (criar `servoMainProfile`)
-- Imprima a ferramenta servo_calib e instale o servo nela: um prato circular com pontos, 10 graus cada um de 0 a 180.
+- Imprima a ferramenta (calibrador do servo) e instale o servo nela: um prato circular com pontos, 10 graus cada um de 0 a 180.
 - Use a ferramenta tools/servoCalib.ino e conecte o servo ao pino 14.
 - Abra o terminal do Arduino IDE e digite `1500` (e pressione Enter) - isso deve ser o meio do servo e ele deve apontar para o ponto médio da ferramenta impressa.
 - Diminua o valor para encontrar os valores `minAngle` e `degMin` (comece com `800` e diminua até o servo parar de se mover, depois volte um passo, por exemplo, defina 790 - servo moveu, 780 - servo moveu, 760 - servo não se move, use 780).
