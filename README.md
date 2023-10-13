@@ -7,11 +7,12 @@
 
 ## Hardware
 - ESP32
-- IMU
+- MPU9250
 - 12 servos TowerPro mg90d
 - Baterias 18650
 - Mini360
 - INA219
+- TP4056
 
 ## Software
 - Compatível com Arduino IDE
