@@ -30,6 +30,11 @@
       
 
 ## Como Fazer
+### Esquema de ligação PCB
+
+![PCB](https://github.com/lucasbustamante/ROBOT_DOG/blob/main/assets/img/Projeto_atualizado.png?raw=true)
+
+
 ### Calibrar os servos (criar `servoMainProfile`)
 - Imprima a ferramenta `calibrador do servo` e instale o servo nela: um prato circular com pontos, 10 graus cada um de 0 a 180.
 - Use a ferramenta `tools/servoCalib.ino` e conecte o servo ao pino 14.
