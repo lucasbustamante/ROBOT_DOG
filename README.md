@@ -19,7 +19,7 @@
 
 ## A Fazer
 
-- [ ] Criação da PCB
+- [x] Criação da PCB
 - [ ] Alteração do Layout dos Controles
 - [ ] Melhorias na modelagem 3D
 - [ ] Impressão 3D
