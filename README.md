@@ -56,3 +56,11 @@
 - Digite `set help` para ver a lista de comandos disponíveis, estamos interessados em `XX_HAL_trim_xxxx`, por exemplo, `LF_HAL_trim_alpha`, onde `LF` - perna frontal esquerda, e `alpha` é o nome do ângulo.
 - Coloque a ferramenta de ângulo Alpha em cima dos servos das pernas do robô, a superfície da ferramenta deve estar (quase) perfeitamente alinhada com o corpo dos servos, se não estiver, use o comando `XX_HAL_trim_alpha valor_em_graus` para definir o valor de ajuste do servo, por exemplo, `set LF_HAL_trim_alpha -3`, não deve ser muito grande, em outros casos você precisa repetir o passo de Montagem.
 - Usando a ferramenta para os ângulos Beta e Gamma, calibre/ajuste os outros servos.
+
+### Relatos
+
+26 de outubro de 2023:
+Concluí a montagem da PCB, restando apenas a etapa de testes.
+
+27 de outubro de 2023:
+Infelizmente, durante o último teste, a PCB apresentou um curto-circuito e pegou fogo, danificando o fio do compartimento de baterias, o módulo de carregamento, o interruptor liga/desliga e um Mini360, além de causar um curto irreversível em toda a PCB. Terei que refazer a placa PCB do zero.
