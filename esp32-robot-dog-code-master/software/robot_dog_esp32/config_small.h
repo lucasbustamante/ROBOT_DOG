@@ -54,7 +54,7 @@ leg legs[LEG_NUM] = {
     {LEG_ANGLE_ALPHA_MAX, LEG_ANGLE_BETA_MAX, LEG_ANGLE_GAMMA_MAX},
     {
       {M_PI_2, M_PI_2, M_PI_2},
-      { 19, 18, 5}, //{ 16, 18, 17},
+      { 19, 33, 5}, //{ 16, 18, 17},
       {  0,  0,  0},
       {  2,  1,  1}
     },
@@ -74,7 +74,7 @@ leg legs[LEG_NUM] = {
     {LEG_ANGLE_ALPHA_MAX, LEG_ANGLE_BETA_MAX, LEG_ANGLE_GAMMA_MAX},
     {
       {M_PI_2, M_PI_2, M_PI_2},
-      { 13, 12, 14},
+      { 27, 26, 25},
       {  0,  0,  0},
       {  2,  1,  1}
     },
