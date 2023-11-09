@@ -34,7 +34,7 @@ leg legs[LEG_NUM] = {
     {LEG_ANGLE_ALPHA_MAX, LEG_ANGLE_BETA_MAX, LEG_ANGLE_GAMMA_MAX},
     {
       {M_PI_2, M_PI_2, M_PI_2},  // hardware middle
-      { 21, 22, 23},   //{ 25, 26, 27}, 3 servo pins
+      { 18, 14, 23},   //{ 25, 26, 27}, 3 servo pins
       {  0,  0,  0},             // servo middle trim
       {  2,  1,  1}              // gear ratio, first and last one is 16 groves on servo and 24 groves on leg
     },
