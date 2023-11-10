@@ -64,3 +64,11 @@ Concluí a montagem da PCB, restando apenas a etapa de testes.
 
 27 de outubro de 2023:
 Infelizmente, durante o último teste, a PCB apresentou um curto-circuito e pegou fogo, danificando o fio do compartimento de baterias, o módulo de carregamento, o interruptor liga/desliga e um Mini360, além de causar um curto irreversível em toda a PCB. Terei que refazer a placa PCB do zero.
+
+08 de novembro de 2023:
+Concluída a montagem do cérebro do robô.
+Realização de testes bem-sucedidos, com pleno funcionamento, inclusive do sensor de voltagem.
+
+09 de novembro de 2023:
+O sensor INA219 apresentou falhas, resultando no superaquecimento e queima do Esp32.
+Substituição do INA219 efetuada; à espera da chegada do novo Esp32.
