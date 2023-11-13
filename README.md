@@ -24,7 +24,7 @@
 - [ ] Melhorias na modelagem 3D
 - [ ] Impressão 3D
 - [ ] Montagem da Estrutura
-- [ ] Implementar sensor de energia INA219
+- [x] Implementar sensor de energia INA219
 - [ ] Implementar sensor de giroscópio MPU9250
 - [ ] Atualizaçao das bibliotecas
       
@@ -57,7 +57,7 @@
 - Coloque a ferramenta de ângulo Alpha em cima dos servos das pernas do robô, a superfície da ferramenta deve estar (quase) perfeitamente alinhada com o corpo dos servos, se não estiver, use o comando `XX_HAL_trim_alpha valor_em_graus` para definir o valor de ajuste do servo, por exemplo, `set LF_HAL_trim_alpha -3`, não deve ser muito grande, em outros casos você precisa repetir o passo de Montagem.
 - Usando a ferramenta para os ângulos Beta e Gamma, calibre/ajuste os outros servos.
 
-### Relatos
+### Relatório
 
 26 de outubro de 2023:
 Concluí a montagem da PCB, restando apenas a etapa de testes.
@@ -72,3 +72,6 @@ Realização de testes bem-sucedidos, com pleno funcionamento, inclusive do sens
 09 de novembro de 2023:
 O sensor INA219 apresentou falhas, resultando no superaquecimento e queima do Esp32.
 Substituição do INA219 efetuada; à espera da chegada do novo Esp32.
+
+13 de novembro de 2023:
+Projeto restaurado e operando perfeitamente! O cérebro do robô foi concluído, equipado com um sensor INA219 para realizar a medição de voltagem.
