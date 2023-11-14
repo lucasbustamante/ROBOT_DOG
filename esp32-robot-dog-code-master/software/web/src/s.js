@@ -56,32 +56,9 @@ var gui ={
 		return (n + "000000").slice(0, 5);
 	},
 
-	updateStatus: function () {
-		var voltage = telemetry.voltage;
-		var batteryIcon;
-	
-		if (voltage > 7000) {
-			batteryIcon = 'battery.svg';
-		} else if (voltage > 6000) {
-			batteryIcon = 'battery1.svg';
-		} else if (voltage > 5000) {
-			batteryIcon = 'battery2.svg';
-		} else if (voltage < 4000) {
-			batteryIcon = 'battery3.svg';
-		} else {
-			// Use a default icon or handle other cases as needed
-			batteryIcon = 'default_battery.svg';
-		}
-	
-		gui.obj.status.innerHTML =
-			gui.displayNumber(voltage) + 'V' +
-			'<img src="/src/' + batteryIcon + '" alt="Battery Icon" style="width: 30px; height: 30px; vertical-align: middle;"> ' +
-			gui.displayNumber(telemetry.current) + 'A | LoopTime: ' +
-			telemetry.loopTime;
+	updateStatus: function (){
+		gui.obj.status.innerHTML = gui.displayNumber(telemetry.voltage) + 'V | ' + gui.displayNumber(telemetry.current) + 'A | LoopTime: ' + telemetry.loopTime;
 	},
-	
-	
-	
 };
 
 let ws = {
