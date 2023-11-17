@@ -23,7 +23,7 @@
 - [ ] Alteração do Layout dos Controles
 - [ ] Melhorias na modelagem 3D
 - [ ] Impressão 3D
-- [ ] Montagem da Estrutura
+- [x] Montagem da Estrutura
 - [x] Implementar sensor de energia INA219
 - [ ] Implementar sensor de giroscópio MPU9250
 - [ ] Atualizaçao das bibliotecas
