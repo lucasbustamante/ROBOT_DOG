@@ -20,9 +20,9 @@
 ## A Fazer
 
 - [x] Criação da PCB
-- [ ] Alteração do Layout dos Controles
-- [ ] Melhorias na modelagem 3D
-- [ ] Impressão 3D
+- [x] Alteração do Layout dos Controles
+- [x] Melhorias na modelagem 3D
+- [x] Impressão 3D
 - [x] Montagem da Estrutura
 - [x] Implementar sensor de energia INA219
 - [ ] Implementar sensor de giroscópio MPU9250
@@ -43,6 +43,16 @@
 - Faça o mesmo para encontrar `maxAngle` e `degMax`, mas comece com 2100 e aumente os valores.
 - Ótimo, agora sabemos os limites do nosso servo (ou pelo menos quais são os limites para a lib+servo), hora de encontrar posições mais precisas do servo.
 - Insira valores até encontrar as posições adequadas para deg30, deg50...deg130, deg150.
+
+### Conexão
+#### Credenciais do ponto de acesso WiFi
+- Renomeie config_wifi.example.h para config_wifi.h
+- Mude APssid para qualquer nome do seu robô, por exemplo, SmallRobotDog
+- Altere APpass para senha (8 ou mais caracteres), por exemplo MySup3rPassw0rd
+
+- Após o upload do código para o ESP32, você poderá encontrar o SmallRobotDog WiFi com seu telefone ou tablet.
+- Abra o navegador e insira o URL http://192.168.4.1/ e você verá dois joysticks virtuais para controlar o cão-robô.
+
 
 ### Pernas
 #### Montagem
