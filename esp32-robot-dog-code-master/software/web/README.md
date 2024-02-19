@@ -12,7 +12,7 @@ Para alterar a interface de controle, siga as etapas abaixo:
 3. Agora, abra o terminal e navegue até o seguinte caminho: `/esp32-robot-dog-code-master/software/web`.
 
 4. Execute os seguintes comandos:
-   (user a versão 12 ou inferior do Node.js)
+   (use a versão 12 ou inferior do Node.js)
    - `npm install`: Isso instalará os pacotes do Node.js necessários.
    - `gulp`: Este comando irá compilar a interface web.
 
