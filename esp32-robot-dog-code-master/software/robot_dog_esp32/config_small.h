@@ -112,6 +112,20 @@ leg legs[LEG_NUM] = {
  * This is for TowerPro MG90D (or maybe I have clone, who knows)
  */
 servoProfile servoMainProfile = {
+    50,   // minAngle
+    160,  // maxAngle
+    430,  // degMin
+    820,  // deg30
+    1017, // deg50
+    1300, // deg70
+    1500, // deg90 - middle
+    1700, // deg110
+    1811, // deg130
+    2141, // deg150
+    2593  // degMax
+};
+
+/*servoProfile servoMainProfile = {
     20,   // minAngle
     160,  // maxAngle
     780,  // degMin
@@ -123,7 +137,7 @@ servoProfile servoMainProfile = {
     1900, // deg130
     2110, // deg150
     2200  // degMax
-};
+};*/
 
 /**
  * My Trim settings
